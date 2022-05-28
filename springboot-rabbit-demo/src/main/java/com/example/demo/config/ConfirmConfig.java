@@ -56,9 +56,6 @@ public class ConfirmConfig {
             @Qualifier("backupExchange") FanoutExchange exchange,
             @Qualifier("backQueue") Queue backQueue
             ){
-        System.out.println("123");
-        System.out.println("456");
-        System.out.println("789");
         return BindingBuilder.bind(backQueue).to(exchange);
     }
     @Bean
