@@ -57,6 +57,7 @@ public class ConfirmConfig {
             @Qualifier("backQueue") Queue backQueue
             ){
         System.out.println(111);
+        System.out.println(11111111);
         return BindingBuilder.bind(backQueue).to(exchange);
     }
     @Bean
