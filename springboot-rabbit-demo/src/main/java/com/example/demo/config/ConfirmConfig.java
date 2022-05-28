@@ -64,7 +64,7 @@ public class ConfirmConfig {
     public Binding warningQueueBindBackEx(
             @Qualifier("backupExchange") FanoutExchange exchange,
             @Qualifier("warningQueue") Queue warningQueue
-    ){
+    ){System.out.println(111)
         return BindingBuilder.bind(warningQueue).to(exchange);
     }
 
